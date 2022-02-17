@@ -1,0 +1,56 @@
+body{
+    color: $brand-black;
+    font-family: $primary-font;
+font-size: 14px;
+color: $brand-background;
+}
+
+// .container{
+    
+//     width: 1200px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 0 15px;
+//     }
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    
+    @media screen and (min-width:480px) {
+        width: 480px;
+    }
+    
+    @media screen and (min-width:768px){
+        width: 768px;
+    }
+    
+    @media screen and (min-width:1200px){
+        width: 1200px;
+    }
+}
+
+
+    h1,h2,h3,h4,h5,h6{
+    margin: 0 ;
+    
+}
+p{
+    margin: 0;
+    
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        
+}
+a{
+    text-decoration: none;
+}
