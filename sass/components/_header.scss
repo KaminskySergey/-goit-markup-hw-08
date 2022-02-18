@@ -228,10 +228,11 @@ padding: 48px 84px
     display: flex;
     align-items: center;
     
+    
 }
 
 @media screen and (min-width:1200px){
-   
+    width: 100%;
 
 }
 
@@ -381,6 +382,8 @@ position: relative;
     display: flex;
     flex-direction: column;
     margin-left: 84px;
+    
+    
 }
 @media screen and (min-width:1200px) {
     flex-direction: row;
