@@ -611,6 +611,12 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .special__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .special__item + .special__item {
     margin-left: 30px;
