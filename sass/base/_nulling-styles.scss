@@ -4,6 +4,9 @@ body{
 font-size: 14px;
 color: $brand-background;
 }
+body.modal-open{
+    overflow: hidden;
+}
 
 // .container{
     

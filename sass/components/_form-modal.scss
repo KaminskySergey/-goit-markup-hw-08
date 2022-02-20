@@ -10,7 +10,6 @@
 }
 .form-label{
     position: relative;
-    
     margin-bottom: 10px;
     
     display: flex;
@@ -19,7 +18,7 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    width: 448px;
+    width: 100%;
 }
 
 .form__title{
@@ -27,14 +26,20 @@
 font-style: normal;
     font-weight: 700;
     text-align: center;
-    
-    width: 448px;
+    width: 100%;
 font-size: 20px;
-line-height: 1.15;
+line-height: 30px;
 text-align: center;
 letter-spacing: 0.03em;
 margin-bottom: 12px;
+
+@media screen and (min-width:1200px){
+    font-size: 20px;
+    line-height: 23px;
+    }
 }
+
+
 
 .form-label__input{
     height: 40px;
@@ -109,12 +114,16 @@ transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &__text{
     
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 0.85;
         letter-spacing: 0.03em;
         color: $brand-grey;
         margin-left: 8.38px;
         
+        @media screen and (min-width:1200px){
+            font-size: 14px;
+            line-height: 0.583;
+        }
         }
 }
 

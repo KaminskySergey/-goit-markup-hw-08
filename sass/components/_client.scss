@@ -1,32 +1,78 @@
 .client{
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width:1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-    
-    &__title{
-        margin-bottom: 50px;
     }
 
+}
+.client__title{
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.178;
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        line-height: 1.166;
+    }
 }
 
 
 ////////////////// list-company //////////////////////////
 .client__list{
     display: flex;
-    margin-left: -30px;
     
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen  and (max-width:767px){
+        margin: -15px;
+    }
+    @media screen and (min-width:768px){
+        margin: -15px;
+    }
+    @media screen and (min-width:1200px){
+        margin: -15px;
+        
+    }
+
 }
 .client__item {
-    margin-left: 30px;
-    width: 170px;
+    
+    
     height: 92px;
     cursor: pointer;
     
+    @media screen  and (max-width:767px){
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+        }
+        
+        @media screen and (min-width:768px){
+            width:calc((100% - 6 * 15px) / 3);
+            margin: 15px;
+        }
+        @media screen and (min-width:1200px){
+            width:calc((100% - 12 * 15px) / 6);
+            margin: 15px;
+        }
+    }
+
     
-}
+        
+
+
+    
+
+    
+    
+
+
+
 
 .client__link{
     display: block;
-    width: 170px;
+    
     height: 92px;
     border: 1px solid $brand-link-svg;
     border-radius: 4px;
@@ -39,6 +85,7 @@
     &:hover, &:focus{
         border-color: #2196F3;
     }
+
 }
 
     .client__svg{

@@ -1,28 +1,62 @@
 .team{
     background-color: $brand-background-team;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .team__title{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+    
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        line-height: 1.66;
+    }
 }
 /////////////////// list ////////////////////
 .team__list{
     display: flex;
-    margin-right: -30px;
-}
+    flex-wrap: wrap;
+    
+    @media screen and (min-width:768px){
+        
+        margin: -15px;
+    }
+    
+    }
+
+
 .team__item{
-margin-right: 30px;
+
 background: $brand-white;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
+
+@media screen and (min-width:768px){
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    }
+    
+    @media screen and(min-width:1200px){
+       width: calc((100% - 8 * 15px) / 4);
+    }
 }
+
+
+
+@media screen and(max-width:767px){
+    .team__item:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+
 // //////////////////////caption //////////////
 
 .team__poster{
     text-align: center;
     padding: 30px 32px 30px 32px;
+    
 
     &--title{
         font-weight: 500;
@@ -47,6 +81,7 @@ border-radius: 0px 0px 4px 4px;
     ////////////////////list-logo//////////////////////
     .team-roster{
         display: flex;
+        justify-content: center;
     }
 
     .team-roster__item + .team-roster__item{

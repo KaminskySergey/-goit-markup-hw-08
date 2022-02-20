@@ -9,12 +9,16 @@
 
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
 
     @media screen and (max-width:767px){
-        overflow: scroll;
+        
         padding: 93px 15px 94px 15px;
     }
-
+    @media screen and (min-width:768px){
+        
+        padding: 208px 159px 207px 159px;
+    }
 }
 .backdrop.is-hidden{
     opacity:0;
@@ -27,34 +31,36 @@
 }
 
 .modal{
-    position: absolute;
-    // width: 528px;
-    // height: 581px;
-
-    // padding: 39px 40px 41px;
-
-    // top: 50%;
-    // left: 50%;
-    
-    // transform: translate(-50%, -50%) scale(1);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
 
     background: $brand-white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     
+    
+        @media screen and (max-width:767px){
+            max-width: 450px;
+            
+            height: 609px;
 
-
-    @media screen and (max-width:767px){
-        position: absolute;
-        padding: 40px;
-        width: 450px;
-        height: 609px;
-
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+            
+            
+        }
+        @media screen and (min-width:768px){
+            width: 450px;
+            height: 609px;
+            
+        }
+        @media screen and (min-width:1200px) {
+            width: 528px;
+            height: 581px;
+            
+        }
 }
 
 .modal-button{
