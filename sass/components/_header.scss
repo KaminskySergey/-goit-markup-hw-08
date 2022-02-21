@@ -94,8 +94,9 @@ left: 0;
 width: 100%;
 height: 796px;
 background-color: $brand-white;
-padding: 48px 40px 
+padding: 48px 83px 
 48px 40px;
+z-index: 1000;
 }
 @media screen and (min-width:768px){
     display: flex;
@@ -291,10 +292,9 @@ position: relative;
                     font-size: 24px;
                     line-height: 0.85;
                     letter-spacing: 0.02em;
+                    color: $brand-grey;
                 }
-                @media screen and (min-width:768px) {
-                    
-                }
+                
 
             }
             

@@ -194,7 +194,8 @@ a {
     width: 100%;
     height: 796px;
     background-color: #ffffff;
-    padding: 48px 40px  48px 40px;
+    padding: 48px 83px  48px 40px;
+    z-index: 1000;
   }
 }
 
@@ -396,6 +397,7 @@ a {
     font-size: 24px;
     line-height: 0.85;
     letter-spacing: 0.02em;
+    color: #757575;
   }
 }
 
@@ -1527,6 +1529,13 @@ a {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .services {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .services-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1607,25 +1616,30 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {
   .services-cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin: -15px;
   }
 }
 
-.services-cards__item {
-  width: calc((100% * 18 - 15px) / 1);
-  margin: 15px;
+@media screen and (max-width: 767px) {
+  .services-cards__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .services-cards__item {
-    width: calc((100% * 18 - 15px) / 2);
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services-cards__item {
+    width: calc((100% - 6 * 15px) / 3);
   }
 }
 
@@ -1670,14 +1684,45 @@ a {
           transform: 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .services-bgr {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services-bgr {
+    padding: 49px 24px 77px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services-bgr {
+    padding: 63px 24px;
+  }
+}
+
 .services-bgr__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
-  width: 322px;
-  height: 168px;
+  width: 402px;
+  height: 140px;
+}
+
+@media screen and (min-width: 768px) {
+  .services-bgr__text {
+    width: 306px;
+    height: 168px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services-bgr__text {
+    width: 322px;
+  }
 }
 
 .services-poster {
