@@ -97,6 +97,9 @@ background-color: $brand-white;
 padding: 48px 83px 
 48px 40px;
 z-index: 1000;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 
 }
 @media screen and (min-width:768px){
