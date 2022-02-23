@@ -355,12 +355,6 @@ a {
   color: #2196F3;
 }
 
-@media screen and (min-width: 1200px) {
-  .mobile-cont {
-    margin-left: auto;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .header-adress__list {
     display: -webkit-box;
@@ -502,6 +496,12 @@ a {
 
 .header-messenger__link:hover, .header-messenger__link:focus {
   color: #000000;
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-cont {
+    margin-left: auto;
+  }
 }
 
 .hero {
