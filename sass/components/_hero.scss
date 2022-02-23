@@ -1,9 +1,14 @@
 .hero{
-    margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    
+    padding: 118px 60px;
     background-color: $brand-fon;
     text-align: center;
+    @media screen and (min-width:768px){
+        padding: 118px 204px;
+    }
+    @media screen and (min-width:1200px){
+        padding: 200px 452px;
+    }
 }
 
 
@@ -15,17 +20,18 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: $brand-white;
+        min-width: 320px;
+        margin: 0 auto;
         margin-bottom: 30px;
-        margin:0 auto;
-        width: 360px;
-        @media screen and (max-width: 767px){
-            margin-bottom: 30px;
-            
+        
+        @media screen and (min-width: 480px){
+            width: 360px;
             
         }
 
         @media screen and (min-width:768px){
-            margin-bottom: 30px;
+            
+            
         }
 
         @media screen and (min-width:1200px) {
@@ -34,63 +40,70 @@
         }
             
         }
+    .hero__cont{
+        padding: 0;
+    }
 
 
 
-
-.hero__overlane{
+        .hero__overlane{
     
-    // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    // url("../images/backgraund/ImgBg.jpg");
-    // width: 1600px;
-    // min-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto;
-       
-    //////// фон-телефона/////////
-    @media screen and (max-width: 767px){
-     
-     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/backgraund/Hero-mob1x.jpg");
-     
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/backgraund/Hero-mob2x.jpg");
-    }
-    }
-    //////// фон-планшета/////////
-    @media screen and (min-width:768px){
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/backgraund/Hero-tablet1x\ .jpg");
-
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/backgraund/Hero-tablet2x\ \ .jpg");
-    }
-    }
-    //////// фон-компа/////////
-    @media screen and (min-width:1200px){
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/backgraund/ImgBg.jpg");
-
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/backgraund/Hero-dextop2x\ \ .jpg");
-    }
-    }
+            // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+            // url("../images/backgraund/ImgBg.jpg");
+            // min-height: 600px;
+            max-width: 1600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        
+            
+               
+            //////// фон-телефона/////////
+            @media screen and (max-width: 479px){
+             
+             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/backgraund/Hero-mob1x.jpg");
+             
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx){
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/backgraund/Hero-mob2x.jpg");
+            }
+            }
+            //////// фон-планшета/////////
+            @media screen and (min-width:480px){
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/backgraund/Hero-tablet1x\ .jpg");
+        
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx){
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/backgraund/Hero-tablet2x\ \ .jpg");
+            width: 100%;
+            
+            }
+            }
+            //////// фон-компа/////////
+            @media screen and (min-width:1200px){
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/backgraund/ImgBg.jpg");
+        
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx){
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/backgraund/Hero-dextop2x\ \ .jpg");
+            
+            }
+            }
     
 
     
@@ -99,6 +112,7 @@
 
     
 }
+
 
 
 .hero__btn {

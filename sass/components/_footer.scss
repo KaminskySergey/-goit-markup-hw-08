@@ -2,26 +2,10 @@
     background-color: $brand-fon;
     padding-top: 60px;
     padding-bottom: 60px;
+    
 }
 
-.footer-cont{
-    display: flex;
-    
-    flex-direction: column;
-    
-    @media screen and (min-width:768px){
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: baseline;
-    }
 
-    @media screen and (min-width:1200px) {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        
-    }
-}
 
 ////////////////// logo/////////////////////
 .footer__link-logo{
@@ -52,16 +36,33 @@
 
 
 //////////////// footer-adress ///////////////
-.cont{
-    text-align: center;
+.footer-desktop{
     @media screen and (min-width:1200px){
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.footer-cont{
+    text-align: center;
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    
+}
+.foot-adress{
+    margin-bottom: 60px;
+    @media screen and (min-width:1200px) {
         text-align: start;
+        margin-right: 70px;
+        margin-bottom: 0;
     }
 }
 .footer-adress{
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
+    
 }
 
 .footer-adress__list{
@@ -120,8 +121,11 @@ letter-spacing: 0.03em;
 ////////////// footer-social////////////
 
 .footer-social{
-    
     margin-bottom: 60px;
+    @media screen and (min-width:768px) {
+        margin: 0;
+    }
+    
     }
 
 
@@ -133,7 +137,10 @@ letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $brand-white;
         margin-bottom: 20px;
-        
+        text-align: center;
+        @media screen and (min-width:1200px) {
+        text-align: start;
+        }
         }
 
 .footer-social__list{
@@ -183,6 +190,7 @@ letter-spacing: 0.03em;
     display: flex;
    flex-direction: column;
    justify-content: center;
+   text-align: center;
 
    @media screen and (min-width:1200px){
     flex-direction: row;
@@ -197,10 +205,11 @@ letter-spacing: 0.03em;
     justify-content: center;
     align-items: center;
     
-    width: 200px;
+    max-width: 200px;
     height: 50px;
     padding: 10px 28px 10px 29px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     
     &:hover, &:focus{
         background-color: $brand-btn;
@@ -218,7 +227,7 @@ letter-spacing: 0.03em;
 }
 
 .footer-subscribe__input--mail{
-    min-width: 358px;
+    max-width: 450px;
     height: 50px;
     margin-bottom: 30px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -230,6 +239,17 @@ padding-top: 15px;
 padding-bottom: 15px;
 padding-left: 16px;
 color: $brand-white;
+@media screen and (min-width:767px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width:1200px) {
+    width: 358px;
+    margin-bottom: 0;
+    
+}
+
 
 }
 
