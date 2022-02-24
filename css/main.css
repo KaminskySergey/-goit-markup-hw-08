@@ -377,7 +377,6 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 84px;
   }
 }
 
@@ -496,6 +495,12 @@ a {
 
 .header-messenger__link:hover, .header-messenger__link:focus {
   color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-cont {
+    margin-left: 84px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
