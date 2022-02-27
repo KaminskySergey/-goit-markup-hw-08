@@ -12,8 +12,8 @@
     overflow-y: scroll;
 
     @media screen and (max-width:767px){
-        
-        padding: 93px 15px 94px 15px;
+        z-index: 4444;
+        padding: 93px 0 94px 0;
     }
     @media screen and (min-width:768px){
         
@@ -44,9 +44,8 @@
     
     
         @media screen and (max-width:767px){
-            max-width: 450px;
+            width:96%;
             
-            height: 609px;
 
             
             

@@ -44,15 +44,23 @@
 }
 .footer-cont{
     text-align: center;
+
     @media screen and (min-width:768px) {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        margin-bottom: 60px;
+        padding: 0 15px;
     }
-    
+    @media screen and (min-width:1200px) {
+        padding: 0;
+        margin-bottom: 0;
+}
 }
 .foot-adress{
-    margin-bottom: 60px;
+    @media screen and (max-width:767px) {
+        margin-bottom: 60px;
+    }
     @media screen and (min-width:1200px) {
         text-align: start;
         margin-right: 70px;

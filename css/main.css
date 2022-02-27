@@ -187,7 +187,6 @@ a {
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -262,6 +261,12 @@ a {
 @media screen and (min-width: 1200px) {
   .mob-nav {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav {
+    margin-bottom: 50px;
   }
 }
 
@@ -370,7 +375,7 @@ a {
     width: 100%;
     height: 4px;
     left: 0;
-    bottom: -2px;
+    bottom: -5px;
     border-radius: 2px;
     background-color: #2196F3;
     display: block;
@@ -427,7 +432,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .header-adress__link--tel {
-    padding-bottom: 21px;
+    padding-bottom: 20px;
   }
 }
 
@@ -443,14 +448,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .header-adress__link--mail {
-    padding-top: 21px;
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header-adress__link--mail {
-    margin-bottom: 0;
+    padding-top: 20px;
   }
 }
 
@@ -536,20 +534,20 @@ a {
 }
 
 .hero {
-  padding: 118px 60px;
+  padding: 118px 0;
   background-color: #2F303A;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 118px 204px;
+    padding: 118px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 200px 452px;
+    padding: 200px 0;
   }
 }
 
@@ -1134,11 +1132,22 @@ a {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-bottom: 60px;
+    padding: 0 15px;
   }
 }
 
-.foot-adress {
-  margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .footer-cont {
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .foot-adress {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1384,7 +1393,8 @@ a {
 
 @media screen and (max-width: 767px) {
   .backdrop {
-    padding: 93px 15px 94px 15px;
+    z-index: 4444;
+    padding: 93px 0 94px 0;
   }
 }
 
@@ -1423,8 +1433,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .modal {
-    max-width: 450px;
-    height: 609px;
+    width: 96%;
   }
 }
 
@@ -1551,10 +1560,13 @@ a {
   color: #757575;
 }
 
+.label-comment {
+  margin-bottom: 20px;
+}
+
 .label-comment__form {
   width: 100%;
   height: 120px;
-  margin-bottom: 20px;
   resize: none;
   border: none;
   outline: 1px solid rgba(33, 33, 33, 0.2);

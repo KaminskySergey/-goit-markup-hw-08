@@ -1,13 +1,13 @@
 .hero{
     
-    padding: 118px 60px;
+    padding: 118px 0;
     background-color: $brand-fon;
     text-align: center;
     @media screen and (min-width:768px){
-        padding: 118px 204px;
+        padding: 118px 0;
     }
     @media screen and (min-width:1200px){
-        padding: 200px 452px;
+        padding: 200px 0;
     }
 }
 
