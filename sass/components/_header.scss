@@ -68,22 +68,35 @@
     
     }
 
-
-
-
-.menu-btn .icon-cross {
-    display: none;
-  }
-  
-  .menu-btn.is-open .icon-cross {
-    display: block;
+    .menu-btn .icon-cross{
+        display: none;
+    }
     
-  }
-  
-  .menu-btn.is-open .icon-menu {
-    display: none;
+    .menu-btn.is-open .icon-cross {
+        display: block;
+            
+          }
     
-  }
+    .menu-btn.is-open .icon-menu {
+        display: none;
+                
+              }
+    
+
+
+// .menu-btn .icon-cross {
+//     display: none;
+//   }
+  
+//   .menu-btn.is-open .icon-cross {
+//     display: block;
+    
+//   }
+  
+//   .menu-btn.is-open .icon-menu {
+//     display: none;
+    
+//   }
 
   .mobile-menu{
 @media screen and (max-width:767px){
