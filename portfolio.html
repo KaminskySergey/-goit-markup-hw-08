@@ -20,7 +20,7 @@
         <a class="header__link-logo" href="#"><span class="header__text-web">Web</span>Studio</a>
         
         
-           <div class="mobile-menu" id="mobile-nav" data-menu>
+           <div class="mobile-menu js-menu-container" id="mobile-nav">
             <div class="mob-nav">
                 <nav class="header-nav">
                     <ul class="header-nav__list">
@@ -62,7 +62,7 @@
             
            </div>
         
-           <button class="menu-btn is-open" type="button" aria-controls="mobile-nav" data-menu-button>
+           <button class="menu-btn is-open js-open-menu" type="button" aria-controls="mobile-nav" data-menu-button>
             <svg width="24" height="16">
                 <use class="icon-menu" href="./images/icons/symbol .svg#icon-close_24px"></use>
             
@@ -318,5 +318,7 @@
 </footer>
 
 <script src="./js/menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="crossorigin="anonymous"></script>
 </body>
 </html>           
