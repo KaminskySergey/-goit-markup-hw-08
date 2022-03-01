@@ -205,7 +205,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
 
     .services-poster{
         border: 1px solid $brand-border;
-        padding:20px 18px;   
+        padding:20px 24px;   
         border-top: 0;
         @media screen and (min-width:768px){
         flex-grow: 1;
